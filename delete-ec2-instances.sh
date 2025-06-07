@@ -3,7 +3,7 @@
 # List of instance names (tags)
 instances=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web")
 domain_name="lingaiah.online"
-hosted_zone_id="Z07608533HHBQHW47XU3F"
+hosted_zone_id="Z08884492QFPW45HM4UQO"
 
 # Terminate EC2 instances
 echo "Terminating EC2 instances..."
