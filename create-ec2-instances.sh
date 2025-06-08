@@ -1,6 +1,6 @@
 #!/bin/bash
 
-instances=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web")
+instances=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web" "dispatch")
 domain_name="lingaiah.online"
 hosted_zone_id="Z07608533HHBQHW47XU3F"
 
@@ -43,5 +43,4 @@ aws route53 change-resource-record-sets --hosted-zone-id $hosted_zone_id --chang
       }
     }]
 }'
-done
-    
+done    
