@@ -28,7 +28,6 @@ else
     echo "You are super user."
 fi
 
-
 dnf install maven -y &>> $LOGFILE
 VALIDATE $? "Installing Maven"
 
@@ -62,7 +61,7 @@ VALIDATE $? "Packaging shipping"
 mv target/shipping-1.0.jar shipping.jar &>> $LOGFILE
 VALIDATE $? "Renaming the artifact"
 
-cp /home/ec2-user/3.7.roboshop-shell/shipping.service /etc/systemd/system/shipping.service &>> $LOGFILE
+cp /home/ec2-user/10.6.roboshop-shell-script/shipping.service /etc/systemd/system/shipping.service &>> $LOGFILE
 VALIDATE $? "Copying service file"
 
 systemctl daemon-reload &>> $LOGFILE
